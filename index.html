@@ -1,1 +1,346 @@
-Hello world!
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Webex CPaaS | Demo Launchpad</title>
+    <!-- add the font awesome link here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon"href="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/webexIcon_roundEdge_4181441409677811.png" type="image/x-icon!">
+  </head>
+	<body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <!-- HEADER -->
+    <header>
+      <nav class="navMenu" id="myNavMenu">
+        <a href="index.html" id="logoA"><img id="logo" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/webexIcon_roundEdge_4181441409677811.png" alt="Webex logo"></a>
+      </nav>
+    </header>
+
+		<!-- MAIN BODY CONTAINER -->
+    <div id="container">
+
+      <p class="offsetTitles"><span style="color: #121212;">Thanks for visiting</span><br>
+      <b>Welcome to the Webex CPaaS Demo Launchpad</b></p>
+
+      <p style="color:#616175; font-weight:500;"> To try a demo, choose one from the menu below and follow the instructions to get started.</p>
+      <p class="key">Key:<br>
+      <i class="fas fa-user"></i> - UK based self-serve demo<br>
+      <i class="fas fa-headset"></i> - Demo <b>requires Webex Engage</b><br>
+      <i class="fas fa-user-friends"></i> - Has <b>options</b> that <b>require Webex Engage</b><br>
+      <i class="fas fa-globe"></i> - Globally accessible self-serve demo</p>
+
+      <!-- DEMO MENU -->
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'waDemo'); hideChat();" id="defaultOpen">WhatsApp Chat<span class="mobhide"> &nbsp;<i class="fas fa-headset"></i></span></button>
+        <button class="tablinks" onclick="openCity(event, 'smsDemo'); hideChat();">SMS Chat<span class="mobhide"> &nbsp;<i class="fas fa-headset"></i></span></button>
+        <span class="mobhide">
+          <button class="tablinks" onclick="openCity(event, 'webChat'); showChat();" id="webChatTab">Web Chat &nbsp;<i class="fas fa-headset"></i></button>
+        </span>
+        <button class="tablinks" onclick="openCity(event, 'emailDemo'); hideChat();">Email Chat<span class="mobhide"> &nbsp;<i class="fas fa-headset"></i></span></button>
+        <button class="tablinks" onclick="openCity(event, 'fbDemo'); hideChat();">FB Messenger Chat<span class="mobhide"> &nbsp;<i class="fas fa-headset"></i></span></button>
+        <!-- <button class="tablinks" onclick="openCity(event, 'appDemo'); hideChat();">In-App Chat<span class="mobhide"> &nbsp;<i class="fas fa-headset"></i></span></button> -->
+        <button class="tablinks" onclick="openCity(event, 'instaDemo'); hideChat();">Instagram DM <span class="mobhide"> &nbsp;<i class="fas fa-user-friends"></i></span></button>
+        <button class="tablinks" onclick="openCity(event, 'rcsDemo'); hideChat();">RCS Demo<span class="mobhide"> &nbsp;<i class="fas fa-globe"></i></span></button>
+        <button class="tablinks" onclick="openCity(event, 'dynamicMenu'); hideChat();">Dynamic Chat Menu<span class="mobhide"> &nbsp;<i class="fas fa-user-friends"></i></span></button>
+        <button class="tablinks" onclick="openCity(event, 'ivmMenu'); hideChat();">Voice IVM to SMS Chat<span class="mobhide"> &nbsp;<i class="fas fa-user-friends"></i></span></button>
+        <button class="tablinks" onclick="openCity(event, 'otpLogin'); hideChat();">OTP Login<span class="mobhide"> &nbsp;<i class="fas fa-user"></i></span></button>
+        <button class="tablinks" onclick="openCity(event, 'channelsWidget'); hideChat();">Channels Widget<span class="mobhide"> &nbsp;<i class="fas fa-user-friends"></i></span></button>
+        <button class="tablinks" onclick="openCity(event, 'openWeather'); hideChat();">OpenWeather Demo<span class="mobhide"> &nbsp;<i class="fas fa-globe"></i></span></button>
+        <button class="tablinks" onclick="openCity(event, 'expoCard'); hideChat();">Exhibition Card Demo<span class="mobhide"> &nbsp;<i class="fas fa-globe"></i></span></button>
+        <button class="tablinks" onclick="openCity(event, 'RetailOrderDemo'); hideChat();">Retail Order<span class="mobhide"> &nbsp;<i class="fas fa-user-friends"></i></span></button>
+        <button class="tablinks" onclick="openCity(event, 'holding'); hideChat();"><i>More, coming soon</i></span></button>
+      </div>
+
+      <div id="waDemo" class="tabcontent">
+        <h3>WhatsApp Chat Demo</h3>
+        <p><span id="greyBold">Note: This demo requires a demonstrator to handle a live agent function.</span><br><br>Please scan the QR code with your mobile device or click the WhatsApp button and send the prepopulated message.</p>
+        <p>This will create a chat in Acme-Corp (Demo Team).</P>
+        <div class="row">
+          <div class="column">
+            <img id="qrcode" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/wa_Message_the_team_23177989864638696.png" alt="SMS QR Code">
+          </div>
+          <div class="column2">
+            <a id="wabutton1" href="https://wa.me/447942207637/?text=Message%20the%20team" target="_blank"><span class="mobhide">WhatsApp&nbsp</span><i class="fab fa-whatsapp"></i></a>
+          </div>
+			  </div>
+      </div>
+
+      <div id="smsDemo" class="tabcontent">
+        <h3>SMS Chat Demo</h3>
+        <p><span id="greyBold">Note: This demo requires a demonstrator to handle a live agent function.</span><br><br>Please scan the QR code with your mobile device<span class="mobShow"> or click the SMS button</span> and send the prepopulated message.<br>For <span id="greyBold">Apple phones</span> you will need to type the word <span id="greyBold">Chatdemo</span></p>
+        <p>This will create a chat in Acme-Corp (Demo Team).</P>
+        <div class="row">
+          <div class="column">
+            <img id="qrcode" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/sms_Chatdemo_23177708629501369.png" alt="SMS QR Code">
+          </div>
+          <div class="column2">
+            <a id="smsButton" href="sms://+447418397311?&body=Chatdemo"><i class="far fa-comment-alt"></i></a>
+          </div>
+			  </div>
+      </div>
+
+      <div class="mobhide">
+        <div id="webChat" class="tabcontent">
+          <h3>Web Chat JavaScript</h3>
+          <p><span id="greyBold">Note: If you interact with the web chat widget, a demonstrator is required to handle live agent functions.</span><br><br><span id="greyBold">1)&nbsp;&nbsp;</span>Click the button below labelled, '<b>Web Chat&nbsp;<i class="far fa-comment-alt"></i></b>', to open the web chat window (showcasing how you can interact with the web chat widget using JavaScript). Click it again, and it will close.</p>
+          <div class="row">
+          <div class="column">
+            <span id="webChatButton">Web Chat&nbsp;<i class="far fa-comment-alt"></i></span>
+            <span id="webChatButtonClose" style="display:none;">Web Chat&nbsp;<i class="far fa-comment-alt"></i></span>
+          </div>
+          </div>
+          <br>
+          <p><span id="greyBold">2)&nbsp;&nbsp;</span>Visit the <b>proactive notification</b> demo site by clicking <a href="https://proactivenotifications.sebhuber.repl.co/" style="text-decoration:none;"><b>here</b>&nbsp;<i class="fas fa-bell"></i></a>.</p>
+        </div>
+      </div>
+
+      <div id="emailDemo" class="tabcontent">
+        <h3>Email Chat Demo</h3>
+        <p><span id="greyBold">Note: This demo requires a demonstrator to handle a live agent function.</span><br><br>Please scan the QR code with your mobile device<span class="mobShow"> or click the email button</span> and send a message.</p>
+        <p>This will create a chat in Acme-Corp (Demo Team).</P>
+        <div class="row">
+          <div class="column">
+            <img id="qrcode" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/email_showcaseAsset_10942209740041188.png" alt="Email QR Code">
+          </div>
+          <div class="column2">
+            <a class="stdButton" href="mailto:showcaseimichat@gmail.com"><i class="far fa-envelope"></i></a>
+          </div>
+			  </div>
+      </div>
+
+      <div id="fbDemo" class="tabcontent">
+        <h3>Facebook's Messenger Chat Demo</h3>
+        <p><span id="greyBold">Note: This demo requires a demonstrator to handle a live agent function.</span><br><br>Please scan the QR code with your mobile device or click the Messenger button and send a message, or you can visit the Facebook page by clicking <a href="https://www.facebook.com/Generic-Chat-Demo-104660175486565/"><b>here</b></a>.</p>
+        <p>This will create a chat in Acme-Corp (Demo Team).</P>
+        <div class="row">
+          <div class="column">
+            <img id="qrcode" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/genericChatPage_17509066813922918.png" alt="Facebook Messenger QR Code">
+          </div>
+          <div class="column2">
+            <a id="fbbutton" href="https://m.me/104660175486565/" target="_blank"><span class="mobhide">Messenger&nbsp</span><i class="fab fa-facebook-messenger"></i></a>
+          </div>
+			  </div>
+      </div>
+
+      <div id="appDemo" class="tabcontent">
+        <h3>In-App Chat Demo</h3>
+        <p><span id="greyBold">Note: This demo requires a demonstrator to handle a live agent function, and our Demo App to be installed on your device.</span><br><br>Please scan the QR code with your mobile device<span class="mobShow"> or click the in-app chat button</span> and send a message.</p>
+        <p>This will create a chat in Acme-Corp (Demo Team).</P>
+        <div class="row">
+          <div class="column">
+            <img id="qrcode" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/inApp_openWelcomeThread_GenericDemoApp_26809180909504537.png" alt="In-app messaging QR Code">
+          </div>
+          <div class="column2">
+            <a id="smsButton" href="GE12102930://command/openChat/739e9d7d-fc90-4a46-8ea5-d984a29622e8"><i class="far fa-comment-alt"></i></a>
+          </div>
+			  </div>
+      </div>
+
+      <div id="instaDemo" class="tabcontent">
+        <h3>Instagram Direct Messages Demo</h3>
+        <p><span id="greyBold">Note: This demo requires a demonstrator to handle a live agent function.</span><br><br>Please scan the QR code with your mobile device or click the Instagram button and send a message.</p>
+        <p>The chat options will create a chat in Acme-Corp (Demo Team).</P>
+        <div class="row">
+          <div class="column">
+            <img id="qrcode" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/webexcpaas_insta_qrcode_1091399662443015.png" alt="Instagram QR Code">
+          </div>
+          <div class="column2">
+            <a class="stdButton" href="https://ig.me/m/webexcpaas" target="_blank"><span class="mobhide">Instagram&nbsp</span><i class="fab fa-instagram"></i></a>
+          </div>
+			  </div>
+      </div>
+
+      <!-- <div id="ambDemo" class="tabcontent">
+        <h3>Apple Messages for Business Demo</h3>
+        <p><span id="greyBold">TBD</span><br><br>Please scan the QR code with your mobile device<span class="mobShow"> or click the Apple Messages for Business button</span> and send a message.</p>
+        <p>This will create a chat in Acme-Corp (Demo Team).</P>
+        <div class="row">
+          <div class="column">
+            <img id="qrcode" src="#" alt="In-app messaging QR Code">
+          </div>
+          <div class="column2">
+            <a id="smsButton" href="https://bcrw.apple.com/urn:biz:cfa61c64-76c1-42f4-96e9-bb2983f84903?body=Message%20the%20team"><i class="fab fa-apple"></i></a>
+          </div>
+			  </div>
+      </div> -->
+
+      <div id="rcsDemo" class="tabcontent">
+        <h3>RCS Showcase Demo</h3>
+        <p><span id="greyBold">Note: This demo is currently available for Android devices only</span><br><br>
+          Scanning the QR Code<span class="mobShow">&nbsp;or tapping</span> the button below will open your default Messaging app with a pre-configured message, just hit send and the demo will start.</p>
+        <div class="row">
+          <div class="column">
+            <img id="qrcode" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/demo_showcase_rcs_4365503598575794.png" alt="RCS QR Code">
+          </div>
+          <div class="column2">
+            <a class="stdButton" href="sms:webex-connect-dcloud@rbm.goog?body=Webex%20CPaaS%20Showcase%20%2D%20RCS.%20Just%20send%20in%20this%20message%20to%20try%20this%20channel." target="_blank"><span class="mobhide">RCS Demo &nbsp</span><i class="far fa-comment-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="dynamicMenu" class="tabcontent">
+        <h3>Dynamic Chat Demo</h3>
+        <p><span id="greyBold">Note: This demo requires a demonstrator to handle a live agent function.</span><br><br>Please scan the QR code with your mobile device or click the WhatsApp button and send the prepopulated message.</p>
+        <p>The chat options will create a chat in Acme-Corp (Demo Team or Presales1).</P>
+        <div class="row">
+          <div class="column">
+            <img id="qrcode" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/dynamicMenu_preChat_Qual_68994737255199978.png" alt="SMS QR Code">
+          </div>
+          <div class="column2">
+            <a id="wabutton3" href="https://wa.me/447942207637/?text=dynamicMenu" target="_blank"><span class="mobhide">WhatsApp&nbsp</span><i class="fab fa-whatsapp"></i></a>
+          </div>
+			  </div>
+        <h3>Delete Your Account</h3>
+        <p><span id="greyBold">Note: Once you have finished your demo, you can delete your account.</span><br><br>Please scan the QR code with your mobile device or click the WhatsApp button and send the prepopulated message.</p>
+        <div class="row">
+          <div class="column">
+            <img id="qrcode" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/deleteMe_69336685590125830.png" alt="SMS QR Code">
+          </div>
+          <div class="column2">
+            <a id="wabutton4" href="https://wa.me/447942207637/?text=deleteMe" target="_blank"><span class="mobhide">WhatsApp&nbsp</span><i class="fab fa-whatsapp"></i></a>
+          </div>
+			  </div>
+      </div>
+
+      <div id="ivmMenu" class="tabcontent">
+          <h3>Voice IVM to SMS Chat</h3>
+          <p><span id="greyBold">Note: This demo has options that requires a demonstrator to handle a live agent function.</span><br><br>Scan the QR code<span class="mobShow"> or click the call button</span> to call an IVM (Interactive Voice Messaging) menu that shows call deflection to an SMS chat that can be escalated to an agent.</p>
+          <div class="row">
+          <div class="column">
+            <img id="qrcode" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/tel447418342326_23169879525028567.png" alt="Call QR Code">
+          </div>
+          <div class="column2">
+            <a id="callButton" href="tel:+447418342326"><i class="fas fa-phone"></i></a>
+          </div>
+			  </div>
+      </div>
+
+      <div id="otpLogin" class="tabcontent">
+        <h3>One Time Password Login Demo</h3>
+        <p>Clicking the button below will take you to a demo site which includes a One Time Password prompt sent via SMS that needs verifying before you can login.</p>
+        <div class="row">
+          <div class="column">
+            <a class="stdButton" href="https://authenticateotp.sebhuber.repl.co/" target="_blank"><span class="mobhide">OTP login page&nbsp<i class="fas fa-lock"></i></span><span id="unlock"><i class="fas fa-unlock"></i></span></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="channelsWidget" class="tabcontent">
+        <h3>Channels Widget Demo</h3>
+        <p>Clicking the button below will take you to a demo site which includes a floating widget which neatly hosts multiple chat channel options.</p>
+        <div class="row">
+          <div class="column">
+            <a class="stdButton" href="https://channelswidget.imisolutions.repl.co/" target="_blank"><span class="mobhide">Channels Widget&nbsp</span><i class="fas fa-comments"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="openWeather" class="tabcontent">
+        <h3>OpenWeather Demo</h3>
+        <p>This demo will send you a location's weather details, using 3rd-party software, <a id="openweather" href="https://openweathermap.org/" target="_blank">OpenWeather</a>, via an API integration. <br></br>Choose your channel, then scan the QR code with your mobile device or click the channel button, send the prepopulated message or send '<b>OpenWeather</b>'.</p>
+        <div class="formBox">
+          <select id="channels" name="channels">
+            <option value="wa">WhatsApp</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img id="qrcode" src="https://qaemailmedia.s3.amazonaws.com/4af614e6-9e18-4ffd-9f84-5ce6f2ce6fa4/openWeather-ciscoDemo_WA_2372503971144262.png" alt="WhatsApp expo demo QR code">
+          </div>
+          <div class="column2">
+            <a id="wabutton6" href="https://wa.me/447860002273/?text=OpenWeather" target="_blank"><span class="mobhide">WhatsApp&nbsp</span><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="expoCard" class="tabcontent">
+        <h3>Exhibition Card Demo</h3>
+        <p>Please scan the QR code with your mobile device or click the WhatsApp button and send the prepopulated message.</p>
+        <p>You will be asked to give your name, job role and share a photo. The demo will create a photo card using a 3rd-party integration with <a id="cloudinary" href="https://cloudinary.com/" target="_blank">Cloudinary</a>.</P>
+        <div class="row">
+          <div class="column">
+            <img id="qrcode" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/expoCertificate_68995946190061146.png" alt="WhatsApp expo demo QR code">
+          </div>
+          <div class="column2">
+            <a id="wabutton5" href="https://wa.me/447942207637/?text=certificate" target="_blank"><span class="mobhide">WhatsApp&nbsp</span><i class="fab fa-whatsapp"></i></a>
+          </div>
+			  </div>
+      </div>
+
+      <div id="RetailOrderDemo" class="tabcontent">
+        <h3>Retail Order Demo</h3>
+        <p><span id="greyBold">Note: This demo has options that requires a demonstrator to handle a live agent function.</span><br><br>Please scan the QR code with your mobile device or click the WhatsApp button and then send the prepopulated message.</p>
+        <div class="row">
+          <div class="column">
+            <img id="qrcode" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/qr-code1png_47656600535664919.png" alt="WhatsApp QR Code">
+          </div>
+          <div class="column2">
+            <a id="wabutton2" href="https://wa.me/447942207637/?text=OrderDemo" target="_blank"><span class="mobhide">WhatsApp&nbsp</span><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div id="holding" class="tabcontent">
+          <h3>Holding</h3>
+          <p>This is space for a new demo, coming soon.</p>
+      </div>
+		</div>	
+
+    <div class="clear"></div>
+    <br>
+    
+		<footer>
+      <span style="margin-left: 16px;">
+        <p><b>Webex CPaaS</b> | Solutions Team &nbsp
+        <a href="https://imimobile.com/" target="_blank"><i class="fas fa-globe"></i></a>
+        &nbsp
+        <a href="https://www.linkedin.com/company/webex/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </p>
+      </span>
+    </footer>
+
+		<script src="script.js"></script>
+    
+    <!--imiengage-->
+    <div id="divicw" data-bind="9DE16A0C-CF43-43AE-9F9D-A175E30129D3" data-org=""></div><script>var i={t:function(t){var e="https://media.imi.chat/widget/js/imichatinit.js";try{var o=new XMLHttpRequest;o.onreadystatechange=function(){if(this.readyState==4){var t=document.getElementById("divicw");if(this.status==0){i.o(t);return}var e=document.createElement("script");e.innerHTML=this.responseText;t.parentNode.insertBefore(e,t.nextSibling)}};o.open("GET",e,true);o.send()}catch(s){console.error(s)}},o:function(t){t.insertAdjacentHTML("afterend",'<iframe id="tls_al_frm" frameborder="0" style="overflow: hidden;height: 208px;width: 394px;position: fixed;display: block;right: 48px;bottom: 12px;z-index: 99999; display:none;"></iframe>');var e=document.getElementById("tls_al_frm");var o=e.contentWindow||(e.contentDocument.document||e.contentDocument);o.document.open();o.document.write('<!doctype html><html><head><meta charset="utf-8"><title>Untitled Document</title><style>body{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;color: #99a0b0;font-size: 14px;}.popover__content{background-color: #fbfbfe; padding: 1.5rem; border-radius: 5px; width: 300px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);position: relative;}.popover__message{font-weight: 600;color:#56627c;font-size: 16px;}.pull-left{float:left;}.clearfix{clear: both;}.hdr-txt{width: 218px; margin-top: 3px;}.para-txt a{text-decoration: none;color: #005cde;}.close-btn{position: absolute;right:15px;top:15px;}.close-btn a{text-decoration: none;font-weight: 400; color: #56627c; font-size: 16px;}</style></head><body><div class="popover__content"><div class="close-btn"><a href="#" onclick="closeTLSAlert();">X</a></div><div class="popover__message"><div class="pull-left hdr-txt">This browser version is not supported on LiveChat.</div></div><div class="clearfix"></div><p class="para-txt">Please update your browser to the latest version and re-open the website to access the widget. </p></div><script>function closeTLSAlert(){window.parent.postMessage({key: "close_tls_alert",value: "close_tls_alert",action: "close_tls_alert"}, "*");}<\/script></body></html>');o.document.close();e.style.display="block";window.addEventListener("message",function(t){if(t.data.action=="close_tls_alert"){i.s()}})},s:function(){var t=document.getElementById("tls_al_frm");t.remove()}};i.t(function(t){});</script>
+    
+    document.getElementById("webChatButton").addEventListener("click", openChat)
+    
+    function openChat(){
+      imichatwidget.maximizeWindow();
+      $('#webChatButtonClose').show();
+      $('#webChatButton').hide();
+    }
+
+    document.getElementById("webChatButtonClose").addEventListener("click", closeChat)
+    
+    function closeChat(){
+      imichatwidget.minimizeWindow();
+      $('#webChatButton').show();
+      $('#webChatButtonClose').hide();
+    }
+
+    document.getElementById("webChatTab").addEventListener("click", showChat)
+
+    function showChat(){
+      imichatwidget.show();
+    }
+
+    document.getElementById(null).addEventListener("click", hideChat)
+
+    function hideChat(){
+      imichatwidget.hide();
+    }
+
+    </script>
+	</body>
+</html>
