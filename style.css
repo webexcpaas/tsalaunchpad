@@ -1,0 +1,728 @@
+/*Body Styling*/
+body {
+	font-family: 'Spartan', sans-serif;
+	color: #1E1E35;
+  line-height: 1.6;
+}
+
+b {
+  font-weight: 600;
+}
+
+a{
+  color: #078855;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.navMenu {
+  overflow: hidden;
+  background-color: #121212;
+}
+
+.navMenu p {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 17px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navMenu a {
+  float: left;
+  position: relative;
+  left: 3%;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 17px 30px;
+  text-decoration: none;
+  display: block;
+  font-size: 17px;
+}
+
+.navMenu a:hover {
+  background-color: #FFF;
+  color: black;
+}
+
+.navMenu a.active {
+  background-color: #078855;
+  color: white;
+}
+
+.navMenu i {
+  font-size: 14px;
+}
+
+.navMenu .icon{
+  display: none;
+}
+
+#greyBold {
+  font-weight: 600;
+  color: rgb(81, 81, 104);
+}
+
+#container {
+	width: 80%;
+	margin: auto;
+}
+
+#logoA{
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto 0;
+  margin-right: 10px;
+  padding: 2.5px;
+}
+
+#logo{
+  height: 56px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center; 
+}
+
+/*Header Styling*/
+header {
+  width: 80%;
+	margin: auto;
+  padding: 10px 0px;
+}
+
+.key {
+  font-size: 14px;
+}
+
+/* Demo menu */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #ededed;
+  width: 25%;
+  height: 500px;
+  overflow-y: auto;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #222;
+  font-weight:500;
+  padding: 18px 14px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.tablinks {
+  font-size: 14px;
+  letter-spacing: .5px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #121212;
+  color:#FFF;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #078855;
+  color: white;
+  font-weight: 600;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 75%;
+  border-left: none;
+  height: 500px;
+  overflow-y: auto;
+}
+
+.clear {
+  clear:both;
+}
+
+/*Text Styling*/
+h1 {
+	font-size: 250%;
+  font-weight: 300;
+}
+
+h2 {
+  padding-bottom: 8px;
+  font-weight: 600;
+  font-size: 150%;
+}
+
+h1, h2, h3 {
+	color: #222;
+  font-weight: 700;
+}
+
+.offsetTitles{
+  font-size: 180%;
+  font-weight: 300;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex: 65;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.column2 {
+  flex: 35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+}
+
+/*Standard Button*/
+.stdButton{
+  border: none;
+  color: white;
+  padding: 16px 28px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #078855;
+  border-radius: 21px;
+  display: inline-flex;
+  font-weight: 600;
+}
+
+.stdButton:hover{
+  background-color: #121212;
+}
+
+/*WhatsApp QR Code*/
+#qrcode{
+  max-width: 220px;
+  border-radius: 15px;
+}
+
+/*WhatsApp Buttons*/
+#wabutton1{
+  border: none;
+  color: white;
+  padding: 16px 28px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #078855;
+  border-radius: 21px;
+  display: inline-flex;
+  font-weight: 600;
+}
+
+#wabutton1:hover{
+  background-color: #121212;
+}
+
+#wabutton2{
+  border: none;
+  color: white;
+  padding: 16px 28px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #078855;
+  border-radius: 21px;
+  display: inline-flex;
+  font-weight: 600;
+}
+
+#wabutton2:hover{
+  background-color: #121212;
+}
+
+#wabutton3{
+  border: none;
+  color: white;
+  padding: 16px 28px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #078855;
+  border-radius: 21px;
+  display: inline-flex;
+  font-weight: 600;
+}
+
+#wabutton3:hover{
+  background-color: #121212;
+}
+
+#wabutton4{
+  border: none;
+  color: white;
+  padding: 16px 28px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #078855;
+  border-radius: 21px;
+  display: inline-flex;
+  font-weight: 600;
+}
+
+#wabutton4:hover{
+  background-color: #121212;
+}
+
+#wabutton5{
+  border: none;
+  color: white;
+  padding: 16px 28px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #078855;
+  border-radius: 21px;
+  display: inline-flex;
+  font-weight: 600;
+}
+
+#wabutton5:hover{
+  background-color: #121212;
+}
+
+#wabutton6{
+  border: none;
+  color: white;
+  padding: 16px 28px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #078855;
+  border-radius: 21px;
+  display: inline-flex;
+  font-weight: 600;
+}
+
+#wabutton6:hover{
+  background-color: #121212;
+}
+
+/*SMS Button*/
+#smsButton{
+  border: none;
+  color: white;
+  padding: 16px 28px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #078855;
+  border-radius: 21px;
+  display: inline-flex;
+  font-weight: 600;
+}
+
+#smsButton:hover{
+  background-color: #121212;
+}
+
+#fbbutton{
+  border: none;
+  color: white;
+  padding: 16px 28px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #078855;
+  border-radius: 21px;
+  display: inline-flex;
+  font-weight: 600;
+}
+
+#fbbutton:hover{
+  background-color: #121212;
+}
+
+/*Call Button*/
+#callButton{
+  border: none;
+  color: white;
+  padding: 16px 54px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #078855;
+  border-radius: 15px;
+  display: inline-flex;
+  font-weight: 600;
+}
+
+#callButton:hover{
+  background-color: #121212;
+}
+
+#webChatButton{
+  border: none;
+  color: white;
+  padding: 16px 54px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #078855;
+  border-radius: 15px;
+  display: inline-flex;
+  font-weight: 600;
+}
+
+#webChatButton:hover{
+  background-color: #121212;
+}
+
+#webChatButtonClose{
+  border: none;
+  color: white;
+  padding: 16px 54px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #078855;
+  border-radius: 15px;
+  display: inline-flex;
+  font-weight: 600;
+}
+
+#webChatButtonClose:hover{
+  background-color: #121212;
+}
+
+#webChatHover{
+  border: none;
+  color: white;
+  padding: 16px 54px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #078855;
+  border-radius: 15px;
+  display: inline-flex;
+  font-weight: 600;
+}
+
+#webChatHover:hover{
+  background-color: #121212;
+}
+
+.webex_assist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.form {
+  display: inline-flex;
+  padding: 10px;
+}
+
+.formBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+#channels{
+  height: 30px;
+  width: 100px;
+  border: none;
+  color: #FFF;
+  background-color: #121212;
+  border-radius: 5px;
+  padding-left: 3px;
+  font-weight: 600;
+}
+
+#webex-enter {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  padding: 7px 10px;
+  background-color: #078855;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+
+#webex-enter:hover{
+  background-color: #121212;
+}
+
+/*Image Styling*/
+img {
+	width: 100%;
+}
+
+/*Footer Styling*/
+footer {
+  position: bottom;
+  width: 80%;
+	margin: auto;
+  left: 0;
+  bottom: 0;
+  background: #121212;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+footer span{
+  display: inline-block;
+  min-width: 230px;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+footer span a{
+  text-decoration: none;
+  color: #FFF;
+  transition: all 0.2s ease-in;
+}
+footer span a:hover{
+  color: #078855;
+}
+
+#cloudinary{
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#cloudinary:hover{
+  text-decoration: underline;
+}
+
+#openweather{
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#openweather:hover{
+  text-decoration: underline;
+}
+
+#divicw {
+  display: none;
+}
+
+/*Sizing Styling*/
+@media screen and (max-width: 875px) {
+	header {
+    width: 95%;
+  }
+
+  .text {
+    margin: auto;
+    max-width: 95%;
+  }
+
+  .offsetTitles{
+    font-size: 140%;
+    font-weight: 300;
+  }
+
+  .row{
+    flex-wrap: wrap;
+  }
+
+  .column2 {
+    flex-wrap: wrap;
+  }
+
+  #wabutton1{
+    font-size: 14px;
+    padding: 14px 22.5px;
+    border-radius: 18px;
+  }
+
+  #wabutton2{
+    font-size: 14px;
+    padding: 14px 22.5px;
+    border-radius: 18px;
+  }
+
+  #wabutton3{
+    font-size: 14px;
+    padding: 14px 22.5px;
+    border-radius: 18px;
+  }
+
+  #wabutton4{
+    font-size: 14px;
+    padding: 14px 22.5px;
+    border-radius: 18px;
+  }
+
+  #wabutton5{
+    font-size: 14px;
+    padding: 14px 22.5px;
+    border-radius: 18px;
+  }
+
+  #wabutton6{
+    font-size: 14px;
+    padding: 14px 22.5px;
+    border-radius: 18px;
+  }
+
+  #smsButton{
+    font-size: 14px;
+    padding: 14px 22.5px;
+    border-radius: 18px;
+  }
+
+  #callButton{
+    font-size: 14px;
+    padding: 14px 22.5px;
+    border-radius: 18px;
+  }
+
+  #webChatButton{
+    font-size: 14px;
+    padding: 14px 22.5px;
+    border-radius: 18px;
+  }
+
+  #qrcode{
+    max-width: 190px;
+    min-width: 50px;
+  }
+
+  header ul {
+    padding-top:2px;
+  }
+  
+  #container {
+		width: 95%;	
+	}
+	
+  footer {
+    width: 95%;
+  }
+
+	h1 {
+		font-size: 195%;	
+	}
+}
+
+@media screen and (max-width: 600px) {
+  .navMenu a:not(:first-child) {display: none;}
+  .navMenu a.icon {
+    float: right;
+    right: 1%;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navMenu.responsive {position: relative;}
+  .navMenu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navMenu.responsive a {
+    display: block;
+    position: relative;
+    text-align: center;
+    clear: both;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  body {
+    margin: 8px 2px;
+  }
+
+  p {
+    font-size: 14.5px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .key {
+    display: none;
+  }
+  
+  .column {
+    flex: 55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+  }
+
+  .column2 {
+    flex: 45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    flex-direction: column;
+  }
+
+  .tab {
+    width: 28%;
+  }
+
+  .tab button {
+    padding: 14px 8px;
+  }
+
+  .tablinks {
+    font-size: 12.5px;
+    letter-spacing: .2px;
+  }
+
+  .tabcontent {
+    padding: 0px 8px;
+    width: 72%;
+  }
+
+  .mobhide {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 461px) {
+  .mobShow {
+    display: none;
+  }
+
+  #smsButton{
+    display: none;
+  }
+
+  #unlock{
+    display: none;
+  }
+
+  #callButton{
+    display: none;
+  }
+}
